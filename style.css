@@ -1,0 +1,28 @@
+:root {
+  /* layout: one readable column on the game's felt; brass for headings and links */
+  --felt: #3b0e18; --felt-deep: #1f070d; --felt-lift: #5a1828;
+  --ivory: #f3ece0; --muted: rgba(243, 236, 224, 0.68); --brass: #d9a54c; --line: rgba(217, 165, 76, 0.25);
+  --display: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
+  --body: 'Familjen Grotesk', system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { background: var(--felt-deep); }
+body {
+  margin: 0; min-height: 100vh; color: var(--ivory); font-family: var(--body); font-size: 17px; line-height: 1.6;
+  background: radial-gradient(ellipse 90% 60% at 50% 0%, var(--felt-lift), var(--felt) 45%, var(--felt-deep)) no-repeat, var(--felt-deep);
+}
+main { max-width: 680px; margin: 0 auto; padding: 48px 20px 64px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+header img { width: 64px; height: 64px; border-radius: 15px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); }
+h1, h2 { font-family: var(--display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1; text-wrap: balance; }
+h1 { font-size: 46px; font-weight: 900; margin: 0; }
+h1 span { color: var(--brass); }
+h2 { font-size: 24px; font-weight: 700; color: var(--brass); margin: 36px 0 8px; letter-spacing: 0.08em; }
+p, li { color: var(--muted); max-width: 65ch; }
+strong { color: var(--ivory); font-weight: 600; }
+a { color: var(--brass); }
+ul { padding-left: 20px; }
+nav { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 15px; }
+.lede { font-size: 19px; color: var(--ivory); }
+.small { font-size: 14px; }
