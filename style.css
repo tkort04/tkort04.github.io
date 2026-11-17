@@ -1,3 +1,8 @@
+/* fonts are served from this site, so visiting it sends nothing to a font service */
+@font-face { font-family: 'Big Shoulders Display'; font-weight: 700; font-display: swap; src: url(fonts/big-shoulders-display-latin-700-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Big Shoulders Display'; font-weight: 900; font-display: swap; src: url(fonts/big-shoulders-display-latin-900-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Familjen Grotesk'; font-weight: 400; font-display: swap; src: url(fonts/familjen-grotesk-latin-400-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Familjen Grotesk'; font-weight: 600; font-display: swap; src: url(fonts/familjen-grotesk-latin-600-normal.woff2) format('woff2'); }
 :root {
   /* layout: one readable column on the game's felt; brass for headings and links */
   --felt: #3b0e18; --felt-deep: #1f070d; --felt-lift: #5a1828;
@@ -26,3 +31,8 @@ ul { padding-left: 20px; }
 nav { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 15px; }
 .lede { font-size: 19px; color: var(--ivory); }
 .small { font-size: 14px; }
+nav a { white-space: nowrap; }
+.notfound { text-align: center; padding-top: 18vh; }
+.notfound h1 { font-size: 64px; }
+.notfound .lede { margin: 12px auto 28px; }
+.notfound .cta { display: inline-block; padding: 12px 22px; border-radius: 12px; background: var(--brass); color: #1a0a0e; font-family: var(--display); font-weight: 900; font-size: 22px; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; }
